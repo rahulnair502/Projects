@@ -1,4 +1,5 @@
 function p = probRespond(t, type)
+%this code determines the probabilty of cellullar response based off of inputs
 if type == 'a'
     p = .8;
 elseif  type == 'b'
