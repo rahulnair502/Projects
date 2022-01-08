@@ -1,5 +1,5 @@
 ##used for accounts that are not yours
-class public_account():
+class Public_account:
     def __init__(self, username):
         self.username = username
 
