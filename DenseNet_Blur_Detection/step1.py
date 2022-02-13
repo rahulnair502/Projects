@@ -1,6 +1,5 @@
 # %%
 # coding: utf-8
-tables.file._open_files.close_all()
 
 # %%
 #Created by Rahul Nair
