@@ -297,16 +297,13 @@ public class AstarAgent extends Agent {
     }
 
     /**
-     * You will implement this method.
+    
      *
      * This method should return true when the path needs to be replanned
      * and false otherwise. This will be necessary on the dynamic map where the
      * footman will move to block your unit.
      * 
-     * You can check the position of the enemy footman with the following code:
-     * state.getUnit(enemyFootmanID).getXPosition() or .getYPosition().
-     * 
-     * There are more examples of getting the positions of objects in SEPIA in the findPath method.
+   
      *
      * @param state
      * @param history
@@ -344,8 +341,7 @@ public class AstarAgent extends Agent {
     }
 
     /**
-     * This method is implemented for you. You should look at it to see examples of
-     * how to find units and resources in Sepia.
+   
      *
      * @param state
      * @return
@@ -379,46 +375,7 @@ public class AstarAgent extends Agent {
     }
 
     /**
-     * This is the method you will implement for the assignment. Your implementation
-     * will use the A* algorithm to compute the optimum path from the start position to
-     * a position adjacent to the goal position.
-     *
-     * Therefore your you need to find some possible adjacent steps which are in range 
-     * and are not trees or the enemy footman.
-     * Hint: Set<MapLocation> resourceLocations contains the locations of trees
-     *
-     * You will return a Stack of positions with the top of the stack being the first space to move to
-     * and the bottom of the stack being the last space to move to. If there is no path to the townhall
-     * then return null from the method and the agent will print a message and do nothing.
-     * The code to execute the plan is provided for you in the middleStep method.
-     *
-     * As an example consider the following simple map
-     *
-     * F - - - -
-     * x x x - x
-     * H - - - -
-     *
-     * F is the footman
-     * H is the townhall
-     * x's are occupied spaces
-     *
-     * xExtent would be 5 for this map with valid X coordinates in the range of [0, 4]
-     * x=0 is the left most column and x=4 is the right most column
-     *
-     * yExtent would be 3 for this map with valid Y coordinates in the range of [0, 2]
-     * y=0 is the top most row and y=2 is the bottom most row
-     *
-     * resourceLocations would be {(0,1), (1,1), (2,1), (4,1)}
-     *
-     * The path would be
-     *
-     * (1,0)
-     * (2,0)
-     * (3,1)
-     * (2,2)
-     * (1,2)
-     *
-     * Notice how the initial footman position and the townhall position are not included in the path stack
+     *Method implementing AstarSearch
      *
      * @param start Starting position of the footman
      * @param goal MapLocation of the townhall
